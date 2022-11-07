@@ -16,11 +16,11 @@ To embed input data, the following network structure is used.
   
 The positional encoding part is implemneted like the paper "Attention Is All You Need" [1].
  The Encoder section is as follows:
-  (1): Dropout(p=0.1, inplace=False)
-  (2): Linear(in_features=dim_input, out_features=dim-model)
-  (3): LayerNorm((dim-model,), eps=1e-05)
-  (4): PositionalEncoding()
-  (5) (num-layers-encoder) * Encoder Layer
+(1): Dropout(p=0.1, inplace=False)
+(2): Linear(in_features=dim_input, out_features=dim-model)
+(3): LayerNorm((dim-model,), eps=1e-05)
+(4): PositionalEncoding()
+(5) (num-layers-encoder) * Encoder Layer
  
  The Encoder Layer consists of two parts:
   (1) Self Attention
