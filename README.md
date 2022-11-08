@@ -7,12 +7,12 @@ First, the data is preproceed using the spectrogram. The implemented transformer
   ❖ Encoder
  
 To embed input data, the following network structure is used.
-  (0): Conv2d(1,32, kernel_size=(41, 11), stride=(2, 2), padding=(0, 10))
-  (1): BatchNorm2d(32, eps=1e-05, momentum=0.1)
-  (2): Hardtanh(min_val=0, max_val=20)
-  (3): Conv2d(32,32, kernel_size=(21, 11), stride=(2, 1))
-  (4): BatchNorm2d(32, eps=1e-05, momentum=0.1)
-  (5): Hardtanh(min_val=0, max_val=20)
+  (0): Conv2d(1,32, kernel_size=(41, 11), stride=(2, 2), padding=(0, 10))  
+  (1): BatchNorm2d(32, eps=1e-05, momentum=0.1)  
+  (2): Hardtanh(min_val=0, max_val=20)  
+  (3): Conv2d(32,32, kernel_size=(21, 11), stride=(2, 1))  
+  (4): BatchNorm2d(32, eps=1e-05, momentum=0.1)  
+  (5): Hardtanh(min_val=0, max_val=20)  
   
 The positional encoding part is implemneted like the paper "Attention Is All You Need" [1].
  The Encoder section is as follows:
