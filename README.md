@@ -1,7 +1,9 @@
 # Speech-Recognition
-The aim is to implement the speech recognistion task with an end-to-end model using the voxforge dataset.
-This is done by a transformer nertwrok. In these networks the recurrence layers is removed and feedforward layers and a new attension model is used.
-First, the data is preproceed using the spectrogram. The implemented transformer network modules are as follow:  
+The aim is to implement the speech recognition task with an end-to-end model using the Voxforge dataset.
+This is done by the transformer nertwrok. In these networks, the recurrence layers are removed and feedforward layers and an attention model are used.
+
+First, the data is preproceed using the spectrogram.  
+The implemented transformer network modules are as follow:  
   &emsp;❖ Input Embedding  
   &emsp;❖ Positional Encoding  
   &emsp;❖ Encoder  
